@@ -4,12 +4,12 @@ from dotenv import load_dotenv
 load_dotenv()
 
 # Source database
-SOURCE_SERVER = "localhost"
+SOURCE_SERVER = "172.20.80.1"
 SOURCE_DB = "WideWorldImporters"
 
 # Data warehouse database
-DW_SERVER = "localhost"
-DW_DB = "WorldWondersDW"
+DB_USER = os.getenv("DB_USER")
+DB_PASSWORD = os.getenv("DB_PASSWORD")
 
 # Paths
 LOGS_PATH = "logs/"
